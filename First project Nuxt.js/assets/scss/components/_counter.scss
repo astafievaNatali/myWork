@@ -1,0 +1,26 @@
+.counter {
+    &_block {
+        padding: 30px 0;
+    }
+    &_item {
+        text-align: center;
+    }
+    &_main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 20px;
+        line-height: 104px;
+        white-space: nowrap;
+        font-family: $ff-bold;
+    }
+    &_number {
+        font-size: 95px;
+    }
+    &_plus {
+        font-size: 70px;
+    }
+    &_text {
+        font-family: $ff-medium;
+    }
+}

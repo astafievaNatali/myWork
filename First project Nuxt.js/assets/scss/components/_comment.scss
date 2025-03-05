@@ -1,0 +1,34 @@
+.comment {
+    &_item + &_item {
+        margin-top: 30px;
+    }
+    &_item {
+        padding: 15px;
+        background: $bg-white;
+    }
+    &_name {
+        font-family: $ff-medium;
+        font-size: $font-size * 1.125;
+        margin: 0 0 10px;
+    }
+    &_email {
+        margin: 0 0 10px;
+    }
+    &_link {        
+        font-style: italic;
+        color: $text;
+    }
+    &_body {
+        font-family: $ff-light;
+    }
+    &_btn {
+        margin: 30px 0 0;
+        text-align: center;
+    }
+
+}
+
+.slider-client .slick-track[data-v-e4caeaf8] {
+    display: flex;
+    align-items: center;
+}

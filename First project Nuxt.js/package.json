@@ -1,0 +1,29 @@
+{
+  "name": "mirumir_nuxt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/svg-sprite": "^0.5.2",
+    "core-js": "^3.8.2",
+    "css-loader": "^5.2.6",
+    "node": "^16.4.0",
+    "normalize.css": "^8.0.1",
+    "nuxt": "^2.14.12",
+    "nuxt-i18n": "^6.27.1",   
+    "vue-slick-carousel": "^1.0.6"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "fibers": "^5.0.0",
+    "node-sass": "^6.0.1",
+    "sass": "^1.35.1",
+    "sass-loader": "^10.2.0"
+  }  
+}

@@ -1,0 +1,113 @@
+.header_mir {
+    background: $tr;
+    padding: 18px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+    transition: $transition;
+    color: $bg-black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    &.main_page {
+        color: $white;
+        // background: $bg-black;
+        .my_svg {
+            fill: $white;
+        }
+        .header_menu_burger {
+            .line {
+                background-color: $white;
+            }
+        }
+    }
+}
+
+.header {
+    &_phone {
+        font-size: $font-size * 1.125;
+        font-family: $ff-medium;
+        color: inherit;
+    }
+    &_btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 12px 67px 12px 37px;
+        font-size: $font-size;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+        color: inherit;
+        border: 1px solid $grey;   
+        border-radius: 20px;  
+        &_svg {
+            position: absolute;
+            right: 37px;
+            top: 50%;     
+            transform: translateY(-50%);
+            display: block;
+            width: 20px;
+            height: 15px; 
+            transition: $transition;
+            color: inherit;
+        }   
+        &:hover,
+        &:focus,
+        &:active {
+            .header_btn_svg {
+                right: 27px;
+            }
+        }
+    }
+}
+
+.header_menu {
+    &_burger {
+        display: block;
+        width: 30px;
+        height: 24px;
+        position: relative;
+        z-index: 15;
+        .line {
+            position: absolute;
+            height: 2px;
+            border-radius: 6px;
+            display: block;
+            right: 0;
+            width: 100%;
+            background-color: $bg-black;
+            transition: $transition;
+        }
+        .line_1 {
+            top:0;
+        }
+        .line_2 {
+            width: 80%;
+            top: 11px;
+        }
+        .line_3 {
+            bottom: 0;
+        }
+        &.open_menu {
+            .line {
+                background-color: $white;               
+            }
+            .line_1 {
+                transform: rotate(45deg);
+                top: 50%;                    
+            }
+            .line_2 {
+                opacity: 0;
+            }
+            .line_3 {
+                transform: rotate(-45deg);
+                top: 50%;                    
+            }
+        }
+     }    
+}
+

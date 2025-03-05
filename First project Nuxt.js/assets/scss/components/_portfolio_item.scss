@@ -1,0 +1,61 @@
+.portfolio {
+    &_item {
+        position: relative;
+        img {
+            transform: scale(1);
+            transition: all 0.3s ease;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            img {
+                transform: scale(1.07);
+            }
+        }
+    }
+    &_img {
+        overflow: hidden;
+    }
+    &_text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 15px;
+        color: $white;
+        mix-blend-mode: difference;
+    }
+    &_title {
+        font-size: 24px;
+        font-family: $ff-bold;   
+    }    
+    &_subtitle {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+        font-family: $ff-light;
+        text-transform: uppercase;
+        margin: 0 0 5px;
+    }
+    &_all {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        .my_btn {
+            border: none;
+            font-size: 24px;
+            font-family: $ff-bold; 
+        }
+    }
+    &_fon {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        background-color: rgba(0,0,0,.15);
+        border-radius: 16px;
+        -webkit-transform: rotate(45deg) translate(50%,-50%);
+        transform: rotate(45deg) translate(50%,-50%);
+        -webkit-box-shadow: -100px 0 0 0 rgb(0 0 0 / 15%), 0 100px 0 0 rgb(0 0 0 / 15%), -100px 100px 0 0 rgb(0 0 0 / 15%);
+        box-shadow: -100px 0 0 0 rgb(0 0 0 / 15%), 0 100px 0 0 rgb(0 0 0 / 15%), -100px 100px 0 0 rgb(0 0 0 / 15%);
+        z-index: -1;
+    }
+}

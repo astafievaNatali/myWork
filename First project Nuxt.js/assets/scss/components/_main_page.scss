@@ -1,0 +1,85 @@
+.main_page {
+    padding-bottom: 120px;
+}
+
+.section_slider {  
+    .slider.slick-slider{
+        background: $text;
+        min-height: 100vh;
+        padding: 140px 0; 
+        display: flex;
+        align-items: center;
+    }
+    .slide {      
+        .my_svg {
+            fill: $white;
+        }
+        &_block {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+            max-width: 1265px;
+            color: $white;
+        }
+        &_flex {
+            display: flex;
+            align-items: center;
+            margin: 0 -15px;
+        }
+        &_text {
+            width: 50%;
+            padding: 0 15px;
+        }
+        &_title {
+            color: $white;
+            font-size: 50px;
+            font-family: $ff-bold;
+            margin: 0 0 40px;
+        }
+        &_link {
+            display: block;
+            position: relative;
+            left: -100px;
+        }
+        &_img {
+            width: 50%;
+            padding: 0 15px;
+            img {
+               display: block;
+               width: 56vw;
+               max-width: 980px;
+            }
+        }
+    }
+}
+
+.about {
+    &_block {
+        padding: 50px 0 0;
+    }
+    &_title {
+        text-align: center;
+        font-size: 30px;
+        font-family: $ff-bold;
+        padding-bottom: 25px;
+        margin-bottom: 35px;
+        position: relative;
+        &::after {
+            content: "";
+            display: block;
+            width: 12px;
+            height: 12px;
+            background: $blue;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: rotate(45deg) translateX(-50%);
+        }
+    }
+    &_text {
+        line-height: 1.6;
+        font-size: 16px;
+        font-family: $ff-medium;
+    }
+}

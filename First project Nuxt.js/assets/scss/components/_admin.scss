@@ -1,0 +1,13 @@
+.admin_text {
+    color: $text;
+    font-size: $font-size;
+    font-family: $ff-regular;
+    line-height: 2;
+    p {
+        margin: 0;
+    }
+    p + p {
+        margin: 15px 0 0;
+        line-height: 2;
+    }
+}

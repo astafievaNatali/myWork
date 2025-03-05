@@ -1,0 +1,124 @@
+.menu {
+    opacity: 0;
+    transition: all 0.5s ease;
+    width: 100%;
+    &_cover {
+        position: absolute;
+        top: 0;
+        height: 0;
+        left: 0;
+        right: 0;
+        background: $bg-black;
+        color: $white;
+        overflow: hidden; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: height 1s ease;
+        &.open_menu {
+            height: 100vh;
+            .menu {
+                opacity: 1;
+                transition: all 0.5s 1s ease;
+            }
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 85px;
+    margin: -15px;
+    &_link {
+        padding: 15px;
+        font-size: 18px;
+        font-family: $ff-medium;
+        color: $white;
+        display: block; 
+        &--big {
+            font-size: 50px;
+            font-family: $ff-bold;
+        }
+        &:hover {
+            color: $blue;
+        }     
+    }
+}
+
+
+.header_info {
+    &_item + &_item {
+        border-top: $border;
+    }
+    &_item {
+        padding: 20px 0;
+    }
+    .phone + .phone {
+        margin: 7.5px 0 0;
+    }
+    .header_phone {
+        color: $white-text;
+        font-family: $ff-medium;
+        transition: $transition;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $white;
+        }
+    }
+    .lang {
+        margin: 0 -10px;
+    }
+    .lang_link {
+        font-size: $font-size * 1.125;
+        color: $white;
+        font-family: $ff-medium;
+        transition: $transition;
+        text-transform: uppercase;
+        position: relative;
+        padding: 0 10px;
+        display: inline-block;
+        &:hover,
+        &:focus,
+        &:active,
+        &.activeLang {
+            color: $blue;
+        }
+    }
+    .lang_link + .lang_link {
+        &::before {
+            content: "";
+            display: block;
+            width: 1px;
+            background: $white-text;
+            left: 0;
+            top: -4px;
+            bottom: 0;
+            position: absolute;
+
+        }
+    }
+}
+
+.social {
+    &_block {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -5px;
+    }
+    &_item {
+        padding: 0 5px;
+    }
+    &_link {
+        display: block;
+        width: 25px;
+        height: 25px;
+        svg {
+            fill: $white;
+        }
+    }
+}
