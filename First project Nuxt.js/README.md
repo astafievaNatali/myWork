@@ -1,5 +1,3 @@
-# mirumir_nuxt
-
 ## Build Setup
 
 ```bash
